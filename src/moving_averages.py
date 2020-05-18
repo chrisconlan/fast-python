@@ -1,6 +1,6 @@
 """
 Given a list of numbers, compute their moving average
-Output the cumulative sum to a new sequence
+Output the to a new sequence of equal length
 """
 import pandas as pd
 from numba import jit

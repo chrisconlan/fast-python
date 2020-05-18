@@ -1,6 +1,7 @@
 """
-Given a list of numbers, compute their cumulative sum
-Output the cumulative sum to a new sequence
+Given a list of numbers, convolve it by an arbitrary 
+weighting vector defined by a list of weights and an 
+offset
 """
 import pandas as pd
 from numba import jit

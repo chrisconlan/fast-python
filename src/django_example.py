@@ -1,9 +1,8 @@
 """
 Sample code for the Django section. This code is not meant 
 to be run independently of a Django project, and is just 
-for expositional purposes.
+for exposition.
 """
-
 
 # Setting up some models
 from django.db import models
@@ -25,14 +24,10 @@ class Book(models.Model):
 # Executes the following sql
 """
 CREATE TABLE "bookstore_author" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(254) NOT NULL UNIQUE); args=None
-
 CREATE TABLE "bookstore_book" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "title" varchar(254) NOT NULL, "subtitle" varchar(254) NOT NULL, "author_id" integer NOT NULL REFERENCES "bookstore_author" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
-
 CREATE INDEX "bookstore_book_title_40d52b28" ON "bookstore_book" ("title"); args=()
 CREATE INDEX "bookstore_book_author_id_c8c6315b" ON "bookstore_book" ("author_id"); args=()
-
 """
-
 
 
 # Creating some objects
@@ -46,14 +41,11 @@ some_book = Book(
 )
 some_book.save()
 
-
 # Querying the objects
 my_books = Book.objects.filter(author__name='Chris Conlan')
 
 for book in my_books:
     print(f'{book.title} by {book.author.name}')
-
-
 
 # Authors by name
 author_names = [
@@ -62,7 +54,6 @@ author_names = [
     'Edgar Allen Poe',
     ...
 ]
-
 
 def slow_get_author_ids(names: List[str]) -> List[int]:
     """
@@ -77,7 +68,6 @@ def slow_get_author_ids(names: List[str]) -> List[int]:
         author_ids.append(author.id)
     return author_ids
 
-
 def fast_get_author_ids(names: List[str]) -> List[int]:
     """
     Given a list of author names, return a list of their 
@@ -88,8 +78,6 @@ def fast_get_author_ids(names: List[str]) -> List[int]:
         .filter(name__in=names)\
         .values_list('id', flat=True)
     return list(author_ids)
-
-
 
 # 1 SELECT query on the book table
 some_book = Book.objects.get(title='Fast Python')
@@ -105,7 +93,6 @@ print(some_book.author.id)
 
 # No queries, because author is now cached
 print(some_book.author.name)
-
 
 # 1 JOIN query on books and authors
 another_book = Book.objects\

@@ -1,3 +1,8 @@
+"""
+Given a list of strings and a target value, determine if 
+the target value is in the list. Equivalent to the 
+functionality of Python's 'in' operator
+"""
 import random
 import string
 from typing import List, Tuple, Set, Dict

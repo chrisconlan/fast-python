@@ -1,6 +1,7 @@
 """
-Given a list of numbers, compute their cumulative sum
-Output the cumulative sum to a new sequence
+Given a list of numbers, compute their sum
+
+Faster version of sum.py for testing utilities
 """
 import pandas as pd
 from numba import jit

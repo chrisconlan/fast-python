@@ -1,5 +1,6 @@
 """
-Given a list of string, concatenate them
+Given a list of lists of strings, flatten into a single
+list of strings
 """
 import random
 import string

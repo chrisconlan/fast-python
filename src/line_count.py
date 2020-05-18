@@ -1,3 +1,8 @@
+"""
+Given a file full of random numbers and random columns, 
+count the lines in the file
+"""
+
 import os
 import re
 

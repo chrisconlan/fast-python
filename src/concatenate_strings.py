@@ -20,7 +20,7 @@ def random_words(n: int) -> List[str]:
 @time_this(lambda *args, **kwargs: len(args[0]))
 def slow_concatenate_words(the_words: List[str]) -> str:
     """
-    Concatenate a list of string. This has O(mn^2) memory 
+    Concatenate a list of strings. This has O(mn^2) memory 
     complexity for n words with an average length of m.
     """
     result: str = ''
@@ -33,7 +33,7 @@ def slow_concatenate_words(the_words: List[str]) -> str:
 @time_this(lambda *args, **kwargs: len(args[0]))
 def fast_concatenate_words(the_words: List[str]) -> str:
     """
-    Concatenate a list of string. This has O(mn) memory 
+    Concatenate a list of strings. This has O(mn) memory 
     complexity for n words with an average length of m.
     """
     return ''.join(the_words)

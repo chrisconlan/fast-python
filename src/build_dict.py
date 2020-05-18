@@ -1,5 +1,8 @@
 """
-Given a list of string, concatenate them
+Given a list of words, build a trivial dictionary where 
+each key-value pair is the word pointing to itself
+
+Used to test speed of dictionary construction
 """
 import random
 import string

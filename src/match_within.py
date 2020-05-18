@@ -1,6 +1,6 @@
 """
-Given two lists of words, return the elements from the first list that are in 
-the second list.
+Given two lists of words, return the elements from the 
+first list that are in the second list.
 """
 import random
 import string

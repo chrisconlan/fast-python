@@ -1,4 +1,6 @@
-
+"""
+Examples of magic methods
+"""
 
 class A(object):
     def __init__(self, value: int):

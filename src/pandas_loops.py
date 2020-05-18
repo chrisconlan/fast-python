@@ -1,6 +1,7 @@
 """
-Given a list of numbers, compute their cumulative sum
-Output the cumulative sum to a new sequence
+Given a pandas dataframe with unknown dimensions and column
+names, loop through it. Stored the last element of the row
+in a variable, accessed by its column name.
 """
 import pandas as pd
 from numba import jit

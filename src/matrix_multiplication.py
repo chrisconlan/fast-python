@@ -1,8 +1,5 @@
-
-
 """
-Given a list of numbers, compute their cumulative sum
-Output the cumulative sum to a new sequence
+Multiply two matrices together
 """
 import pandas as pd
 from numba import jit

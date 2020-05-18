@@ -1,4 +1,6 @@
-
+"""
+Sample code regarding data structures defining graphs
+"""
 
 class Node(object):
     def __init__(value: int):

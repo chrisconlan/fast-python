@@ -1,5 +1,5 @@
 """
-Timing various string operations
+Sizing information for strings
 """
 
 import sys

@@ -1,4 +1,6 @@
-
+"""
+Sizing information for lists
+"""
 import sys
 
 for i in range(100):

@@ -1,4 +1,6 @@
-
+"""
+Sizing information for dictionaries
+"""
 import sys
 
 from utils.profiler import ExponentialRange
