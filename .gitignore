@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+speed-book.sublime-workspace
+
+data/big_numeric_csv_files/
+
 # Distribution / packaging
 .Python
 build/
@@ -127,3 +131,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.Rproj.user

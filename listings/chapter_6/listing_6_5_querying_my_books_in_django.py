@@ -1,0 +1,1 @@
+my_books = Book.objects.filter(author__name='Chris Conlan')
