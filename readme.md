@@ -17,7 +17,7 @@ The following code profiles can be run as stand-alone scripts. They may or may n
 + Find largest `k` values in a list: [find_top_k.py](src/find_top_k.py)
 + List construction/declaration/flattening: [flatten_lists.py](src/flatten_lists.py)
 + Counting lines in a file: [line_count.py](src/line_count.py)
-+ Set intersection, finding matches in a list: [match_withing.py](src/match_withing.py)
++ Set intersection, finding matches in a list: [match_within.py](src/match_within.py)
 + Matrix multiplication: [matrix_multiplication.py](src/matrix_multiplication.py)
 + Computing moving averages: [moving_averages.py](src/moving_averages.py)
 + Counting frequency of a word in text: [occurrences_of.py](src/occurrences_of.py)
