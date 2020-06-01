@@ -17,7 +17,7 @@ mpl.rcParams['grid.linewidth'] = 0.5
 pd.set_option('display.max_rows', None)
 
 # Flip this to false to skip chart rendering. Mostly for bulk testing.
-SHOW = False
+SHOW = True
 
 __all__ = ["time_this", "report_results", "timed_report", "ExponentialRange"]
 # A module-level store of all the evaluation times of things you ran with the 

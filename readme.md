@@ -28,6 +28,13 @@ The following code profiles can be run as stand-alone scripts. They may or may n
 + Low-level sorting algorithms: [sorting_v2.py](src/sorting_v2.py)
 + Adding a list of numbers: [sum.py](src/sum.py)
 
+Running them is simple ...
+
+```
+cd fast-python/src
+python cumulative_sum.py
+```
+
 ----
 
 ![](cover.png)
