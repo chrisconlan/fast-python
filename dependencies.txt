@@ -9,7 +9,9 @@ mkl-random==1.1.1
 mkl-service==2.3.0
 numba==0.49.1
 numpy==1.18.1
+olefile==0.46
 pandas==1.0.3
+Pillow==7.1.2
 pyparsing==2.4.7
 python-dateutil==2.8.1
 pytz==2020.1

@@ -34,6 +34,15 @@ Running them is simple ...
 cd fast-python/src
 python cumulative_sum.py
 ```
+-----------------
+
+#### Dependencies
+
+I have included a `dependencies.txt`, but you should be fine with a blank Python 3 environment followed by ...
+
+```
+pip install numpy pandas numba joblib matplotlib pillow
+```
 
 ----
 
