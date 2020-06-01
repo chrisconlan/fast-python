@@ -1,6 +1,8 @@
 # fast-python
 Source code for Fast Python (2020) by Chris Conlan
 
+Paperback available for purchase [on Amazon](https://amzn.to/2XmvJ3x).
+
 ---------------
 
 #### Code profiles
