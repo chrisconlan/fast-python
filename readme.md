@@ -82,7 +82,7 @@ np_fast_cusum
 
 ```
 
-I use the profiler frequently in my own work, as it allows me to analyze the relationship between computational complexity and raw execution time pretty easily.
+I use the profiler frequently in my own work. It allows me to analyze the relationship between computational complexity and raw execution time pretty easily.
 
 -----------------
 
