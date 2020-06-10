@@ -12,6 +12,9 @@ import heapq
 from utils.profiler import time_this, timed_report
 from utils.profiler import ExponentialRange
 
+import itertools
+
+
 def random_lists_of_chars(n: int) -> List[List[str]]:
     characters = string.ascii_uppercase + string.digits
     big_list = random.choices(characters, k=n*7)
@@ -80,6 +83,17 @@ def comprehension_flatten_lists(
     """
     return [val for _list in the_lists for val in _list]
 
+
+@time_this(lambda *args, **kwargs: len(args[0]))
+def itertools_flatten_list(
+    the_lists: List[List[str]]) -> List[str]:
+    """
+    Flatten a list of lists via itertools.chain.from_iterable
+    """
+    return [*itertools.chain.from_iterable(the_lists)]
+
+
+
 if __name__ == '__main__':
 
     # test_lists = [[1,2,3],[5,6,7],[3,4],[1]]
@@ -109,3 +123,7 @@ if __name__ == '__main__':
 
         for i in exp_range.iterator():
             comprehension_flatten_lists(the_lists[:i])
+
+        for i in exp_range.iterator():
+            itertools_flatten_list(the_lists[:i])
+
