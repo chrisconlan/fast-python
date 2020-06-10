@@ -90,7 +90,7 @@ def itertools_flatten_list(
     """
     Flatten a list of lists via itertools.chain.from_iterable
     """
-    return [*itertools.chain.from_iterable(the_lists)]
+    return list(itertools.chain.from_iterable(the_lists))
 
 
 
