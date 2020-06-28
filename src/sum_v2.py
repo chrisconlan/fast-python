@@ -1,19 +1,20 @@
 """
 Given a list of numbers, compute their sum.
 
-Faster version of sum.py for testing purposes
+Changes data generation method for sum.py for different results
 """
 import pandas as pd
 from numba import jit
 import numpy as np
+import random
 
 from typing import List
 
 from utils.profiler import time_this, timed_report
 from utils.profiler import ExponentialRange
 
-def random_numeric_list(n: int) -> List[float]:
-    return list(np.random.random(n))
+def random_numeric_list_v2(n: int) -> List[float]:
+    return [random.random() for _ in range(n)]
 
 
 @time_this(lambda x: len(x))
@@ -46,7 +47,7 @@ def _numba_fast_sum(values: np.ndarray) -> float:
     return accum
 
 # Force numba to run jit compilation
-_numba_fast_sum(np.array(random_numeric_list(100000)))
+_numba_fast_sum(np.array(random_numeric_list_v2(100000)))
 
 
 @time_this(lambda x: len(x))
@@ -58,8 +59,8 @@ def numba_fast_sum(values: np.ndarray) -> float:
 
 if __name__ == '__main__':
 
-    exp_range = ExponentialRange(0, 4, 1/4)
-    values = random_numeric_list(exp_range.max)
+    exp_range = ExponentialRange(0, 8, 1/4)
+    values = random_numeric_list_v2(exp_range.max)
 
     with timed_report():
         for i in exp_range.iterator():

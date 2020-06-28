@@ -1,7 +1,5 @@
 """
-Given a list of numbers, compute their sum
-
-Faster version of sum.py for testing utilities
+Given a list of numbers, compute their sum.
 """
 import pandas as pd
 from numba import jit
@@ -12,7 +10,7 @@ from typing import List
 from utils.profiler import time_this, timed_report
 from utils.profiler import ExponentialRange
 
-def random_numeric_list(n: int) -> List[float]:
+def random_numeric_list(n: int) -> List[np.float64]:
     return list(np.random.random(n))
 
 
