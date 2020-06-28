@@ -19,7 +19,7 @@ def fast_sum(values: List[float]) -> float:
     accum = 0
     for value in values:
         accum += value
-    return value
+    return accum
 
 @time_this(lambda x: len(x))
 def fast_native_sum(values: List[float]) -> float:
